@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'Sign_up/signup.css' %}">
+    <title>Singup</title>
+</head>
+<body>
+    <fieldset>
+        <div class="container">
+            {% if is_auth %}
+                <p class="error">Este nome de usuario já existe!</p> 
+            {% endif %}
+            <h1 class="tittle">Sing up</h1>
+    
+         <form method="POST" action="{% url 'signup' %}" class="divInputs"> {% csrf_token %} 
+            <input type="text" class="inputs" placeholder="Usúario" name="username" required>
+            <input type="password" class="inputs" placeholder="Senha" name="password" required>
+            <input type="email" class="inputs" placeholder="Email" name="email" required>
+            <input type="submit" class="button" value="Sing up">
+        </form>
+        <p class="text">Já possui tem uma conta? Faça <a href="{% url 'signin' %}">login</a> aqui!</p>
+        </div>
+    </fieldset>
+<p class="credit">Credito da imagem <a href="https://br.pinterest.com/pin/445082375685936822/" target="_blank"> aqui</a>!</p>
+<p class="credit_mboile">Credito da imagem <a href="https://br.pinterest.com/pin/27092035254334112/" target="_blank"> aqui</a>!</p>
+</body>
+</html>

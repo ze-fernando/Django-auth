@@ -1,0 +1,169 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    background-image: url(../src/Hello\ Dribbble.png);
+    background-size: 100%;
+
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+fieldset{
+    color: #fff;
+    border-radius: 12px;
+}
+.container{
+    background-color: transparent;
+    width: 350px;
+    height: 400px;
+    border-radius: 12px;
+}
+.divInputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.tittle{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.inputs{
+    width: 300px;
+    height: 20px;
+    border: none;
+    border-bottom: solid 1.5px #ffffff;
+    outline: none;
+    margin: 20px 0 20px 0;
+    background-color: transparent;
+    color: #FFF;
+}
+.inputs::placeholder{
+    color: #ffffff;
+}
+.button{
+    width: 300px;
+    height: 30px;
+
+    background-color: transparent;
+    color: #fff;
+    border: solid 1px #fff;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+.button:hover{
+    background-color: #FFf;
+    color: #000000;
+    cursor: pointer;
+}
+.text{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 40px;
+}
+.text a{
+    text-decoration: none;
+    color: #ff7637;
+}
+.credit{
+    color: #FFF;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    font-size: 12px;
+}
+.credit a{
+    text-decoration: none;
+    color: #ff7637;
+}
+.credit_mboile{
+    display: none;
+    color: #FFF;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    font-size: 12px;
+}
+.credit_mboile a{
+    display: none;
+    text-decoration: none;
+    color: #ff7637;
+}
+.error{
+    text-align: center;
+    color:#ff0000;
+    margin-bottom: 25px;
+}
+@media (max-width: 750px){
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(../src/mobile.jpg);
+        background-size: 100% 100%;
+        font-family: sans-serif;
+        overflow: hidden;
+        width: 99vw;
+        height: 100vh;
+    }
+    .credit{
+        display: none;
+        color: #FFF;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        font-size: 12px;
+    }
+    .credit a{
+        display: none;
+        text-decoration: none;
+        color: #ff7637;
+    }
+    .credit_mboile{
+        display: flex;
+        color: #FFF;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        font-size: 12px;
+    }
+    .credit_mboile a{
+        display: flex;
+        text-decoration: none;
+        color: #ff7637;
+    }
+    .container{
+        background-color: transparent;
+        width: 440px;
+        height: 550px;
+        border-radius: 12px;
+    }
+    .button{
+        width: 400px;
+        height: 30px;
+    
+        background-color: transparent;
+        color: #fff;
+        border: solid 1px #fff;
+        border-radius: 8px;
+        margin-top: 70px;
+    }
+    .inputs{
+        width: 400px;
+        height: 20px;
+        border: none;
+        border-bottom: solid 1.5px #ffffff;
+        outline: none;
+        margin: 30px 0 20px 0;
+        background-color: transparent;
+        color: #FFF;
+    }
+    .error{
+        text-align: center;
+        color:#ff0000;
+        margin-bottom: 25px;
+    }
+}
