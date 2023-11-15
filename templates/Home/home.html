@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'Home/home.css' %}">
+        <title>Home</title>
+    </head>
+<body>
+    <h1>Bem vindo!</h1>
+
+    <a href="{% url 'signin' %}" class="link"><input type="button" class="voltar" value="Voltar"></a>
+
+    <fieldset>
+        <p id="title_div">Desenvolvido por José Fernando!</p>
+        <div id="geral">
+            <p><a target="_blank" id="github" 
+                href="https://github.com/ze-fernando">
+                <img id="icon_github" src="{% static 'src/github.png' %}" alt=""> Github</a>
+
+            <a target="_blank" id="instagram" 
+            href="https://www.instagram.com/zec_libarino/">
+            <img id="icon_insta" src="{% static 'src/instagram.png' %}" alt=""> Instagram</a></p>
+
+            <p><a target="_blank" id="linkedin" 
+                href="">
+                <img id="icon_linkedin" src="{% static 'src/linkedin.png' %}" alt=""> Linkedin</a>
+
+            <a target="_blank" id="email" 
+            href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCHrlGLVczGCmkgLrHXPJkwgVhqnRFDBGdvtvTpMLwzstMbJbkdmrKDxxHXsJXWBLLfJKdhL">
+            <img id="icon_contato" src="{% static 'src/envelope.png' %}" alt=""> Email</a></p>
+
+        </div>
+    </fieldset>
+    
+    <p class="credit">Credito da  <a href="https://br.pinterest.com/pin/445082375685936822/">imagem</a> 
+        e <a href="https://www.flaticon.com/br/icones-gratis/instrumento">icones</a> aqui!</p>
+        <p class="credit_mboile">Credito da imagem <a href="https://br.pinterest.com/pin/27092035254334112/" target="_blank"> aqui</a>!</p>
+
+    </body>
+</html>
